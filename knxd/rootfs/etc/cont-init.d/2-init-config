@@ -7,14 +7,7 @@ readonly CONF="/etc/knxd.ini"
 # =======================================
 
 # first check if a custom config is specified and use that
-if bashio::config.has_value 'custom_config' && [ $(bashio::string.length "$(bashio::config 'custom_config')") > 5 ]; then
-	bashio::log.info "Using custom configuration:"
-	bashio::log.info "$(bashio::config 'custom_config')"
-	cat > ${CONF} << EOF
-$(bashio::config 'custom_config')
-EOF
-	exit 0
-fi
+
 
 
 # =======================================
