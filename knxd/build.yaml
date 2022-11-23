@@ -1,0 +1,13 @@
+build_from:
+  aarch64: "ghcr.io/da-anda/hass-io-addons-aarch64-addon-knxd"
+  amd64: "ghcr.io/da-anda/hass-io-addons-amd64-addon-knxd"
+  armhf: "ghcr.io/da-anda/hass-io-addons-armhf-addon-knxd"
+  armv7: "ghcr.io/da-anda/hass-io-addons-armv7-addon-knxd"
+  i386: "ghcr.io/da-anda/hass-io-addons-i386-addon-knxd"
+labels:
+  org.opencontainers.image.title: "Home Assistant Add-on: KNXD daemon"
+  org.opencontainers.image.description: "Home Assistant Add-on: KNXD daemon"
+  org.opencontainers.image.source: "https://github.com/da-anda/hass-io-addons/tree/master/knxd"
+args:
+  KNXD_VERSION: 0.14.56
+  KNXD_REPO: https://github.com/knxd/knxd.git
