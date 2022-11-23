@@ -42,7 +42,7 @@ declare device=$(bashio::config 'device')
 
 
 if $(bashio::config.equals 'interface' 'usb'); then
-    count=$(lsusb |grep "0403:6989")
+    count=$(lsusb |grep "0403:6898")
 	if [ "${count}" != "" ]; then
 	    echo "$count"
 	    USB_BUS=$(echo "${count}" | cut -d ' ' -f 2)
