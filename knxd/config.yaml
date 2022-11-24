@@ -47,4 +47,3 @@ ports_description:
 
 uart: true
 usb: true
-#full_access: true
